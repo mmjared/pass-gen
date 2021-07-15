@@ -12,6 +12,12 @@ var lowerArray = Array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
 var capArray = Array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z")
 var specialArray = Array("!", "@", "#", "$", "%", "^", "&", "*",)
 
+var useUpperCase = window.confirm("Would you like to include UPPER case characters?");
+var useLowerCase = window.confirm("Would you like to include lower case characters?");
+var useSpecial = window.confirm("Would you like to include $pecial characters?");
+var useNumbers = window.confirm("Would you like to include Numbers#?");
+
+
 function writepassword() {
 	var password = generatePassword()
 	var passwordText = document.querySelector("#password")
